@@ -12,21 +12,21 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextNumberX"
+            android:id="@+id/editTextNumberXS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextNumberY"
+            android:id="@+id/editTextNumberYS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextNumberTotal"
+            android:id="@+id/editTextNumberTotalS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

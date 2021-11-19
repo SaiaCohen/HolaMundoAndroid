@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/proyecto/HolaMundoAndroid/app/src/main/res/layout/activity_div.xml" value="0.25416666666666665" />
         <entry key="..\:/proyecto/HolaMundoAndroid/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/proyecto/HolaMundoAndroid/app/src/main/res/layout/activity_multi.xml" value="0.25416666666666665" />
         <entry key="..\:/proyecto/HolaMundoAndroid/app/src/main/res/layout/activity_resta.xml" value="0.1" />
         <entry key="..\:/proyecto/HolaMundoAndroid/app/src/main/res/layout/activity_suma.xml" value="0.16" />
       </map>

@@ -7,9 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.material.textfield.TextInputEditText;
-import java.text.NumberFormat;
-
 public class SumaActivity extends AppCompatActivity {
 
     private EditText editTextX;
@@ -20,9 +17,9 @@ public class SumaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suma);
-        editTextX = findViewById(R.id.editTextNumberX);
-        editTextY = findViewById(R.id.editTextNumberY);
-        editTextTotal = findViewById(R.id.editTextNumberTotal);
+        editTextX = findViewById(R.id.editTextNumberXS);
+        editTextY = findViewById(R.id.editTextNumberYS);
+        editTextTotal = findViewById(R.id.editTextNumberTotalS);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
