@@ -7,29 +7,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MultiActivity extends AppCompatActivity {
+public class ConvertirActivity extends AppCompatActivity {
 
     private EditText editTextX;
-    private EditText editTextY;
     private EditText editTextTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
-        editTextX = findViewById(R.id.editTextNumberXM);
-        editTextY = findViewById(R.id.editTextNumberYM);
-        editTextTotal = findViewById(R.id.editTextNumberTotalM);
+        setContentView(R.layout.activity_tangente);
+        editTextX = findViewById(R.id.editTextNumberXT);
+        editTextTotal = findViewById(R.id.editTextNumberTotalT);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if( !hasFocus)
-                {
-                    realizaOperacion();
-                }
-            }
-        });
-        editTextY.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if( !hasFocus)
@@ -48,17 +37,10 @@ public class MultiActivity extends AppCompatActivity {
         {
             if( isEntero(editTextX.getText().toString()))
             {
-                total += getEntero( editTextX.getText().toString());
+                total = getEntero( editTextX.getText().toString())*365;
             }
         }
 
-        if(editTextY.getText().toString() != null)
-        {
-            if( isEntero(editTextY.getText().toString()))
-            {
-                total += getEntero( editTextY.getText().toString());
-            }
-        }
 
         editTextTotal.setText(String.format("%d", total), TextView.BufferType.SPANNABLE);
         editTextTotal.setEnabled(false);

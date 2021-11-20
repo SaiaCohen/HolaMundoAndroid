@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class DivActivity extends AppCompatActivity {
+public class MultiplicacionActivity extends AppCompatActivity {
 
     private EditText editTextX;
     private EditText editTextY;
@@ -16,10 +16,10 @@ public class DivActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_div);
-        editTextX = findViewById(R.id.editTextNumberXD);
-        editTextY = findViewById(R.id.editTextNumberYD);
-        editTextTotal = findViewById(R.id.editTextNumberTotalD);
+        setContentView(R.layout.activity_multiplicacion);
+        editTextX = findViewById(R.id.editTextNumberXM);
+        editTextY = findViewById(R.id.editTextNumberYM);
+        editTextTotal = findViewById(R.id.editTextNumberTotalM);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -56,7 +56,7 @@ public class DivActivity extends AppCompatActivity {
         {
             if( isEntero(editTextY.getText().toString()))
             {
-                total /= getEntero( editTextY.getText().toString());
+                total *= getEntero( editTextY.getText().toString());
             }
         }
 

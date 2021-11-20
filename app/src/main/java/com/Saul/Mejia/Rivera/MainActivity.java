@@ -11,9 +11,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonSuma;
     private Button buttonResta;
-    private Button buttonDiv;
-    private Button buttonMulti;
-
+    private Button buttonMultiplicacion;
+    private Button buttonTangente;
+    private Button buttonDivis;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         buttonResta = findViewById(R.id.buttonResta );
-        buttonResta.setOnClickListener(new View.OnClickListener(){
+        buttonResta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 abrirResta();
@@ -37,26 +37,50 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        buttonDiv = findViewById(R.id.buttonDiv );
-        buttonDiv.setOnClickListener(new View.OnClickListener(){
+
+        buttonMultiplicacion = findViewById(R.id.buttonMulti );
+        buttonMultiplicacion.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                abrirDiv();
+                abrirMultiplicacion();
             }
 
         });
 
-        buttonMulti = findViewById(R.id.buttonMulti );
-        buttonMulti.setOnClickListener(new View.OnClickListener(){
+        buttonDivis = findViewById(R.id.buttonDivision );
+        buttonDivis.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                abrirMulti();
+                abrirDivis();
             }
 
         });
+        buttonTangente = findViewById(R.id.buttonTang );
+        buttonTangente.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                abrirTangente();
+            }
+
+        });
+
+
     }
 
+    private void abrirTangente() {
+        Intent intent = new Intent(this, ConvertirActivity.class);
+        startActivity(intent);
+    }
 
+    private void abrirDivis() {
+        Intent intent = new Intent(this, DivisionActivity.class);
+        startActivity(intent);
+    }
+
+    private void abrirMultiplicacion() {
+        Intent intent = new Intent(this, MultiplicacionActivity.class);
+        startActivity(intent);
+    }
     private void abrirSuma(){
         Intent intent = new Intent(this, SumaActivity.class);
         startActivity(intent);
@@ -65,12 +89,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RestaActivity.class);
         startActivity(intent);
     }
-    private void abrirDiv(){
-        Intent intent = new Intent(this, DivActivity.class);
-        startActivity(intent);
-    }
-    private void abrirMulti(){
-        Intent intent = new Intent(this, MultiActivity.class);
-        startActivity(intent);
-    }
+
+
 }

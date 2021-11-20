@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#E64747"
         android:orientation="vertical">
 
         <EditText
@@ -29,7 +30,9 @@
             android:id="@+id/editTextNumberTotalS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#141C45"
             android:ems="10"
+            android:foregroundTint="#E3D7D7"
             android:inputType="number" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
